@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas with Guides</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+            position: relative;
+        }
+        .guide {
+            position: absolute;
+            background-color: red;
+        }
+        .horizontal-guide {
+            height: 1px;
+        }
+        .vertical-guide {
+            width: 1px;
+        }
+        .button-container {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button id="draw-rectangle">Draw Rectangle</button>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div id="horizontal-guide-start" class="guide horizontal-guide"></div>
+    <div id="horizontal-guide-center" class="guide horizontal-guide"></div>
+    <div id="horizontal-guide-end" class="guide horizontal-guide"></div>
+    <div id="vertical-guide-start" class="guide vertical-guide"></div>
+    <div id="vertical-guide-center" class="guide vertical-guide"></div>
+    <div id="vertical-guide-end" class="guide vertical-guide"></div>
+    <script src="script.js"></script>
+</body>
+</html>
